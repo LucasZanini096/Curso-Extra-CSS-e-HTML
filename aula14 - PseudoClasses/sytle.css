@@ -1,0 +1,53 @@
+.heading {
+    transition: all 300ms ease-in-out;
+    /*Transition faz refência ao heading:hover*/
+}
+
+.heading:hover {
+    background: red
+}
+
+a {
+    background: darkgoldenrod
+}
+
+a:link {
+    color: blueviolet;
+}
+
+
+a:visited {
+    background: firebrick;
+}
+
+a:hover {
+    background: darkslateblue;
+    color: beige;
+    text-decoration: none;
+}
+
+a:active {
+    background: darkslategray;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background-color: rebeccapurple;
+    cursor: not-allowed;
+}
+
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+
+.pai .lista li:first-child {
+    background: blue;
+}

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex; 
+    justify-content: space-between;
+    flex-flow: row wrap;
+    background: yellow;
+}
+
+.flex-item {
+    /*Eu quero que os elementos se acomodem de acordo com o espaço do bloco*/
+    flex-grow: 1;  /*Valor -> proporção*/
+    /*Pega o espaço sobrando da tela e cresce o elemento para o tamanho específico da tela*/
+    /*Pega o espaço em branco e adiciona a cada elemento do flexbox*/
+    flex-basis: 320px; /*É quase um tamanho de largura mínima para a acomodação dos elementos flex*/
+    height: 200px;
+    flex-shrink: 1; /*Valor -> proporção*/ 
+    /*Permite que um elemento do flexbox dimiua automaticamente com o tamanho da tela*/
+    color: #fff;
+    background: red;
+
+    /*flex: 0 0 0*/ 
+    /*Primeiro valor: flex-grow | Segundo Valor: flex-basis | Terceiro valor: flex-shirink*/ 
+    
+}
+
+.flex-item:nth-child(3) {
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(4) {
+    align-self: center;
+}
+
+.flex-item:nth-child(2) {
+    align-self: stretch;
+}
+
+
+
+/*Parte final do vídeo (Parte 3)
+
+.flex-container {
+    display: flex; 
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: yellow;
+    height: 640px;
+}
+
+.flex-item {
+    width: 33.33%;
+    color: #fff;
+    background: red;
+    
+}
+
+.flex-item:nth-child(3) {
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(4) {
+    align-self: center;
+}
+
+.flex-item:nth-child(2) {
+    align-self: stretch;
+}
+*/

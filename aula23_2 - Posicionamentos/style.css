@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+ul {
+    height: 100px;
+    overflow: auto; /*Permite o scroll dessa lista*/
+}
+
+ul li.sticky {
+    position: sticky; /*Faz um stick de um elemento da página web*/
+    background: gray;
+    top: 0; /*Tem que colocar para funcionar*/
+}

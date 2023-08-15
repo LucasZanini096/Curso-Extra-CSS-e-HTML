@@ -1,0 +1,17 @@
+.texto {
+    display: content-block; /*As medidas do margin, padding e border vão ser consideradas no valor da altura e largura do bloco -> Content-Box*/
+    /*Se eu deixar inline, as configurações de tamanho não serão aplicadas */
+    background: red;
+    width: 50%;
+    height: 200px;
+    max-width: 600px; /*Posso definir uma altura e largura máxima para determinado conteúdo*/
+    max-height: 500px;
+    min-width: 0;
+    min-height: 100px;
+    overflow-y: auto; /*Todo o conteúdo que passar para fora do bloco é escondido (hidden). Mas está na página.*/
+    /*Mas posso configurar como scroll, permitindo acessar o conteúdo 
+    Também posso configurar como auto*/
+    margin: 0 auto 50px auto; /*Centraliza o conteúdo no centro */
+    padding: 50px;
+    border: 5px solid black
+}

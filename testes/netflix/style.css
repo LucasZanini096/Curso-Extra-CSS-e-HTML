@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/d7af077c-af5a-4055-8f9a-740a43588583/a7265ef3-cac9-4c22-a3e6-6c88ba72bbf5/BR-pt-20230717-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    
+  
+}
+
+#Logo-Netflix {
+    color: red;
+}
+
+#Botão-Netflix {
+    background: red;
+    color: azure;
+    width: 80px;
+    height: 40px;
+    border-style: none;
+    border-radius: 12px;
+    text-align: center;
+}
+
+header h1, header button {
+    padding: 2%;
+}
+
+
+
+
+
+
+

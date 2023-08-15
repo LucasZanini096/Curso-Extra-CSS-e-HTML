@@ -1,0 +1,24 @@
+/*Especificidade CSS */
+
+/*
+ID  Classes, atributos e pseudo-classes  Elementos e pseudo-classes
+1   0                                    0
+0   1                                    0
+1   1                                    0    
+*/
+
+/*Style é muito específico !! -> Vai sobrescrever */
+/*Excessão : !Important -> vai formatar de qualquer maneira o estilo */
+
+body#b.bclass p#p.p::selection:hover {
+    background: purple;
+}
+
+#p {
+    background: red;
+}
+
+#p.p {
+    background: yellow;
+}
+

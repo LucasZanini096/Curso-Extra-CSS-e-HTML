@@ -1,0 +1,49 @@
+*{ /*Seleciona todos os elementos */
+    margin: 0;
+    padding: 0;
+}
+
+body div section p {
+    color: darkblue;
+}           
+
+.main-content p {
+    font-style: italic;
+}
+
+div.main-content h2.heading {
+    color: red;
+    font-style: oblique;
+}
+
+.pai.filha {
+    color: red;
+}
+
+.pai > .filha {
+    color: bisque;
+}
+
+.pai .filha {
+    color: aquamarine;
+}
+
+.pai h1+p {
+    color: blueviolet;
+}
+
+.pai h1~p { /*Todos os p's que vem após h1 serão selecionados*/
+    color: azure;
+}
+
+[qualquer-atributo="valor"] { /*Selecionando um atributo para modificar algo. Pode possuir ou não um valor*/
+     color: aquamarine;
+}
+
+[meu-atributo|="qualquer-coisa"] {
+    color: brown;
+}
+
+[meuatributo^="l"] {
+    color: crimson;
+}

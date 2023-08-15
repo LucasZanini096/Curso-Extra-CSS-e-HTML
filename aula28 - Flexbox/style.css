@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex; /*Se comporta como um elemento block (pai)*/
+    background: yellow;
+    flex-wrap: wrap; /*Se não tiver espaço para ocupar vários elementos
+    eles vão quebrar de linha quando não houver espaço*/
+    height: 500px;
+    flex-direction: row; /*Direção dos itens*/
+    justify-content: flex-start; /*Alinhamento dos itens - eixo principal horizontal*/
+    align-items: stretch; /*Alinhamento dos itens - eixo vertical*/
+    background: yellow;
+
+}
+
+.flex-item {
+    background: red;
+    width: 100%;
+    
+}

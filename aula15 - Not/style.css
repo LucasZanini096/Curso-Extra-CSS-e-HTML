@@ -1,0 +1,5 @@
+p:not(.meio){ 
+    /*Operador not de negação -> 
+    Permite não estilizar um elemento em específico*/
+    color: blue;
+}

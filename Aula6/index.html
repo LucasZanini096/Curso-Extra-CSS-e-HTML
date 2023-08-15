@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset=" UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    .Img-twitter {
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin-top: 5px;
+        border: 1px solid red;
+    }
+</style>
+</head>
+
+<body>
+    <h1 style="background-color: blueviolet;"> Cabeçalho </h1> <!--Internal Style sheet-->
+    <p> <b> ipsum dolor</b> sit amet, <strong> adipiscing elit </strong>.
+        Integer ullamcorper nibh mattis pharetra ultricies.
+        Cras pretium congue mi eu sollicitudin.
+        Aenean interdum risus sed sapien vehicula, vel ultricies dui sollicitudin.
+        Curabitur suscipit lorem bibendum venenatis tempus.
+        Sed a velit sit amet nisl tincidunt dignissim.
+        Vivamus ac tellus ac erat mollis facilisis quis sed odio.
+        Vestibulum sollicitudin odio elit, eu ornare sem interdum ut. </p>
+
+    <!--"B" (Bold) e "Strong" deixam em negrito o texto. Porém a linguagem interpreta diferentes essas duas tags -->
+    <!--"I" e "em" deixam em itálico o texto. Porém a linguagem interpreta diferentes essas duas tags -->
+    <!--"Del" e "s" colocam um risco nos caracteres de um texto-->
+    <!--"Ins" e "u" colocam um underline na palavra-->
+    <!--Small diminui o tamanho do texto-->
+    <!--Sup eleva um elemento (expoente, por exemplo)-->
+    <!--Sub rebaixa um elemento-->
+    <!--Br realiza a quebra de linha-->
+    <!--Blockquote promove a inserção de um bloco de citação-->
+    <!--Hr coloca uma linha em um lugar da página-->
+    <!--Code formata os caracteres em formato de código-->
+    <!--Pre insere um texto com espaçamento pessoal, ou seja, não segue a regra do HTML-->
+    <!--Span - formata um conteiner genérico inline-->
+    <!--Div - formata um conteiner genérico block-->
+
+    <a href="https://www.w3schools.com/css/css_background.asp" target="_blank">Clique Aqui</a>
+    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dpt" target="_blank">
+        <img class="Img-twitter"
+            src="https://media.cnn.com/api/v1/images/stellar/prod/230723020951-elon-musk-twitter-revamp-intl-hnk.jpg?c=original">
+    </a>
+
+    <blockquote cite="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dpt">
+        Estou fazendo um bloco de citação
+    </blockquote> <!--Não posso colocar o blockquote dentro de um parágrafo. -->
+
+    <p>Nunc <code>quis nisl faucibus</code>, sagittis nunc eu, 
+        condimentum tellus. 
+        Maecenas ante ex, rhoncus sed consequat molestie, ornare id mi. 
+        Proin sit amet gravida orci.</p>
+
+
+    <pre> <code>
+        // Create a Set
+    const letters = new Set(["a","b","c"]);
+
+    // List all Elements
+
+    let text = "";
+
+    letters.forEach (function(value) {
+
+    text += value;
+
+    })</code>
+
+    </pre>
+
+        
+</body>
+
+</html>

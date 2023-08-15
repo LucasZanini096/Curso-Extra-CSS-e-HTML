@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        label .feminino , label .masculino {
+            display: inline;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="#" method="get" target="_blanck" autocomplete="off">
+        <section>
+            <h1>Cabeça</h1>
+            <p>O formulário</p>
+
+            <fieldset>
+                <legend>Legenda</legend>
+                <p>
+                    <input type="text" autocomplete="on">
+                </p>
+            </fieldset>
+        </section>
+    </form>
+
+    <form action="#" method="get" target="_blanck" autocomplete="off">
+        <p>O meu formulário</p>
+
+        <p>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome">
+            <!--Name é um identificador para o back-engine (JavaScript)-->
+        </p>
+
+
+        <p>
+            <label for="dev">Sou um Dev</label>
+            <input type="checkbox" id="name" name="dev" value="sim">
+            <!--Name é um identificador para o back-engine (JavaScript)-->
+        </p>
+
+        <p> Gênero: <br>
+            <label for="feminino" class="feminino">feminino</label> 
+            <input type="radio" id="feminino" name="genero" value="feminino"><br>
+            <label for="masculino" class="masculino">masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino"><br>
+        </p>
+
+        <p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </p>
+
+        <p>
+            <label for="datetime">Date:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2023-07-28 20:00">
+        </p>
+
+        <p>
+            <label for="time">Date:</label>
+            <input type="time" id="time" name="time" value="20:00">
+        </p>
+
+        <p>
+            <label for="cor">Cor preferida:</label>
+            <input type="color" id="cor" name="cor" value="#FF000">
+        </p>
+
+        <p>
+            <label for="email">Seu email:</label>
+            <input type="email" id="email" name="email" placeholder="ex.: email@gmail.com">
+        </p>
+
+        <p>
+            <label type="file">Sua foto:</label>
+            <input type="file" id="file" name="file" accept=".png" multiple> 
+            <!--Acept permite aceitar determinados tipos de arquivos-->
+            <!--Multiple me permite selecionar masi de um arquivo-->
+        </p>
+
+        <p>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" placeholder="Digite um número">
+        </p>
+
+        <p>
+            <label for="range">range</label>
+            <input type="range" id="range" name="range" min="0" max="10" step="2">
+        </p>
+
+
+        <p>
+            
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        <input type="submit">
+
+        </p>
+
+        <p>
+            <optgroup label="Teste">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab" label="Porche"></option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+           </optgroup> 
+           
+            </select>
+        </p>
+
+        <p>
+            <label for="url">Sua url:</label>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+
+    
+
+    
+</body>
+</html>
